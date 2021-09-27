@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_new_game"
+        android:title="New Game"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_numbers_game"
+        android:title="Numbers Game"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_phrase_game"
+        android:title="Phrase Game"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_main_menu"
+        android:title="Main Menu"
+        app:showAsAction="never" />
+
+</menu>
