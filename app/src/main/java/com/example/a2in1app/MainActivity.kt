@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,10 +39,12 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.menu_numbers_game -> {
-               goToNumbersGame()
+                Toast.makeText(this,"Numbers Game!", Toast.LENGTH_SHORT).show()
+                goToNumbersGame()
                 return true
             }
             R.id.menu_phrase_game -> {
+                Toast.makeText(this,"Phrase Game!",Toast.LENGTH_SHORT).show()
                 goToPhraseGame()
                 return true
             }

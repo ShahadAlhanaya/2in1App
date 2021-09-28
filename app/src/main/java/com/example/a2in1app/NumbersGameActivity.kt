@@ -9,6 +9,7 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isVisible
@@ -129,14 +130,18 @@ class NumbersGameActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.menu_new_game -> {
+                Toast.makeText(this,"New Game!", Toast.LENGTH_SHORT).show()
                 goToNumbersGame()
                 return true
             }
             R.id.menu_phrase_game -> {
+                Toast.makeText(this,"Phrase Game!",Toast.LENGTH_SHORT).show()
+
                 goToPhraseGame()
                 return true
             }
             R.id.menu_main_menu -> {
+                Toast.makeText(this,"The Menu",Toast.LENGTH_SHORT).show()
                 goToMainActivity()
                 return true
             }
